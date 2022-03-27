@@ -1,0 +1,59 @@
+#landing-page {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: black;
+  padding-left: 200px;
+  height: 100vh;
+  width: 100vw;
+}
+
+#landing-page > .title {
+  color: white;
+  font-size: 150px;
+}
+
+#landing-page > .title.second {
+  color: red;
+  font-size: 150px;
+}
+
+.bg-image {
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 35%;
+  background-image: url(../../public/guy-nobg.png);
+  background-size: cover;
+}
+
+.label-hello::after {
+  content: "Hello.";
+}
+.label-hello:hover::after {
+  content: "About";
+}
+.label-i-am::after {
+  content: "I am";
+}
+.label-i-am:hover::after {
+  content: "Work";
+}
+.label-tom::after {
+  content: "Tom";
+}
+.label-tom:hover::after {
+  content: "Contact";
+}
+
+.on-hover:hover {
+  margin-left: 40px;
+  transition: all 0.4s cubic-bezier(0.2, 0.6, 0.2, 1);
+}
+
+a {
+  text-decoration: none;
+  z-index: inherit;
+}
